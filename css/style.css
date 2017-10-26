@@ -47,3 +47,5 @@ h2{line-height: normal;padding: 0;font-size: 18pt;margin: 0;}
 #list-name{ margin: 5px;padding: 0; cursor: pointer;}
 #list-name:hover{color: rgb(4, 126, 0);}
 #pageTitle{background-color: #fff;margin: 10px;}
+#hide-filters{color: red; cursor: pointer;}
+#show-filters{color: green; cursor: pointer;}

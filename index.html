@@ -15,11 +15,11 @@
 		<div id="pageTitle">
 			<h2>Shools in Hartford</h2>
 			<span data-bind="if: toggleNav">
-				<span data-bind="click: showElements, clickBubble: false">
+				<span id="show-filters" data-bind="click: showElements, clickBubble: false">
 					Show filters</span>
 			</span>
 			<span data-bind="ifnot: toggleNav">
-				<span data-bind="click: hideElements">Hide filters</span>
+				<span id="hide-filters" data-bind="click: hideElements">Hide filters</span>
 			</span>
 		</div>
 
