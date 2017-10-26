@@ -1,6 +1,6 @@
-
 // Initiate the map
 var map;
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
@@ -36,17 +36,17 @@ var School = function (data) {
 var ViewModel = function () {
     var self = this;
     this.schoolList = ko.observableArray([]);
-// Creating school list
+    // Creating school list
     locations.forEach(function (schoolItem) {
         self.schoolList.push(new School(schoolItem));
     });
-// Initiating info window
+    // Initiating info window
     var infowindow = new google.maps.InfoWindow({
         maxWidth: 200,
     });
-// initiating marker
+    // initiating marker
     var marker;
-// Generating info window with foursqare API
+    // Generating info window with foursqare API
     self.schoolList().forEach(function (schoolItem) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(schoolItem.lat(), schoolItem.lng()),
@@ -116,11 +116,11 @@ var ViewModel = function () {
             }, 1000);
         });
     });
-// triggering click event on list item
+    // triggering click event on list item
     self.showInfo = function (schoolItem) {
         google.maps.event.trigger(schoolItem.marker, 'click');
     };
-// Show and hide filters
+    // Show and hide filters
     self.toggleNav = ko.observable(false);
     this.navStatus = ko.pureComputed(function () {
         return self.toggleNav() === false ? 'nav' : 'navClosed';
@@ -135,7 +135,7 @@ var ViewModel = function () {
         self.toggleNav(false);
         return true;
     };
-// Filtering based on input text
+    // Filtering based on input text
     self.visible = ko.observableArray();
     self.schoolList().forEach(function (place) {
         self.visible.push(place);

@@ -9,7 +9,7 @@ Download the .zip file and open with browser or through local server.
 * Four square API - https://developer.foursquare.com/
 
 # MVC Library used
-http://knockoutjs.com/documentation/introduction.html
+*Knockout js - http://knockoutjs.com/documentation/introduction.html
 
 # Browser tested
 This app is tested in the latest versions of Chrome and Firefox.

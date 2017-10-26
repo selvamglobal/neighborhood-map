@@ -5,7 +5,14 @@ body {
   margin: 0;
   padding: 0;
 }
-h2{line-height: normal;padding: 0;font-size: 18pt;margin: 0;}
+
+h2 {
+  line-height: normal;
+  padding: 0;
+  font-size: 18pt;
+  margin: 0;
+}
+
 #map {
   height: 100%;
   width: 100%;
@@ -27,8 +34,9 @@ h2{line-height: normal;padding: 0;font-size: 18pt;margin: 0;}
 }
 
 .nav {
-  background-color:#f1f1f1;
-  margin: 10px; padding: 10px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
 }
 
 .appinfo {
@@ -42,10 +50,38 @@ h2{line-height: normal;padding: 0;font-size: 18pt;margin: 0;}
   background-color: #fff;
 }
 
-#search{margin: 5px; width: 95%; font-size:12pt; }
-#list-view{list-style-type: none;padding: 0; }
-#list-name{ margin: 5px;padding: 0; cursor: pointer;}
-#list-name:hover{color: rgb(4, 126, 0);}
-#pageTitle{background-color: #fff;margin: 10px;}
-#hide-filters{color: red; cursor: pointer;}
-#show-filters{color: green; cursor: pointer;}
+#search {
+  margin: 5px;
+  width: 95%;
+  font-size: 12pt;
+}
+
+#list-view {
+  list-style-type: none;
+  padding: 0;
+}
+
+#list-name {
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+#list-name:hover {
+  color: rgb(4, 126, 0);
+}
+
+#pageTitle {
+  background-color: #fff;
+  margin: 10px;
+}
+
+#hide-filters {
+  color: red;
+  cursor: pointer;
+}
+
+#show-filters {
+  color: green;
+  cursor: pointer;
+}
